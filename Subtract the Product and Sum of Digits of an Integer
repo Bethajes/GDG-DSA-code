@@ -1,0 +1,14 @@
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        arr = [int(d) for d in str(n)]
+
+        add = 0
+        mul = 1
+        for i in arr:
+            mul *=i
+            pro = mul
+        for i in arr:
+            add +=i
+            summ = add
+        res = pro-summ
+        return res
